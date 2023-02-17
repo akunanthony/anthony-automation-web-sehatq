@@ -1,0 +1,12 @@
+webdriverpool/WebdriverInitializer.java
+ webdriverpool.WebdriverInitializer
+locator/LoginPageLocator.java
+ locator.LoginPageLocator
+locator/RegisterPageLocator.java
+ locator.RegisterPageLocator
+pages/SehatQMainPage.java
+ pages.SehatQMainPage
+locator/SehatQMainPageLocator.java
+ locator.SehatQMainPageLocator
+pages/LoginPageSehatQ.java
+ pages.LoginPageSehatQ

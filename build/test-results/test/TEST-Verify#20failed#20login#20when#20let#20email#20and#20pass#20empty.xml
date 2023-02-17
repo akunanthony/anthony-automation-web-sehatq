@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify failed login when let email and pass empty" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-16T01:41:21" hostname="Anthonys-Laptop.local" time="16.861">
+  <properties/>
+  <testcase name="I am on login page" classname="Verify failed login when let email and pass empty" time="12.254"/>
+  <testcase name="I input my correct email with &quot;&quot;" classname="Verify failed login when let email and pass empty" time="2.392"/>
+  <testcase name="I input my correct password with &quot;&quot;" classname="Verify failed login when let email and pass empty" time="0.602"/>
+  <testcase name="I press button login" classname="Verify failed login when let email and pass empty" time="1.287"/>
+  <testcase name="error message for empty email will be shown" classname="Verify failed login when let email and pass empty" time="0.155"/>
+  <testcase name="error message for empty password will be shown" classname="Verify failed login when let email and pass empty" time="0.026"/>
+  <testcase name="classMethod" classname="Verify failed login when let email and pass empty" time="21.438"/>
+  <system-out><![CDATA[
+@negative
+Scenario: Verify failed login when let email and pass empty ?[90m# src/test/resources/features/Login.feature:21?[0m
+]]></system-out>
+  <system-err><![CDATA[26654 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 109.0.5414.74 (resolved driver for Chrome 109)
+26662 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/davidanthonny/.cache/selenium/chromedriver/mac64/109.0.5414.74/chromedriver
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 15018
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 16, 2023 8:41:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

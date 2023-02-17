@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify failed login when using invalid email" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-02-16T01:40:56" hostname="Anthonys-Laptop.local" time="20.405">
+  <properties/>
+  <testcase name="I am on login page" classname="Verify failed login when using invalid email" time="14.681"/>
+  <testcase name="I input my correct email with &quot;artinyapabangmesi@yopmail&quot;" classname="Verify failed login when using invalid email" time="4.244"/>
+  <testcase name="I input my correct password with &quot;adminabcde&quot;" classname="Verify failed login when using invalid email" time="0.659"/>
+  <testcase name="I press button login" classname="Verify failed login when using invalid email" time="0.657"/>
+  <testcase name="error message email will be shown" classname="Verify failed login when using invalid email" time="0.08"/>
+  <testcase name="classMethod" classname="Verify failed login when using invalid email" time="26.944"/>
+  <system-out><![CDATA[
+@negative
+Scenario: Verify failed login when using invalid email           ?[90m# src/test/resources/features/Login.feature:13?[0m
+]]></system-out>
+  <system-err><![CDATA[512 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 109.0.5414.74 (resolved driver for Chrome 109)
+527 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/davidanthonny/.cache/selenium/chromedriver/mac64/109.0.5414.74/chromedriver
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 1214
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 16, 2023 8:40:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

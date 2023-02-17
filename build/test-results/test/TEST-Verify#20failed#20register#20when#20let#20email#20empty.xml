@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify failed register when let email empty" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-02-16T01:42:43" hostname="Anthonys-Laptop.local" time="33.412">
+  <properties/>
+  <testcase name="I am not currently logged in" classname="Verify failed register when let email empty" time="19.98"/>
+  <testcase name="I am on the Login page" classname="Verify failed register when let email empty" time="6.204"/>
+  <testcase name="I press &quot;Daftar&quot;" classname="Verify failed register when let email empty" time="1.692"/>
+  <testcase name="Daftar Page will be shown" classname="Verify failed register when let email empty" time="1.837"/>
+  <testcase name="I fill in Nama Lengkap with &quot;anthony&quot;" classname="Verify failed register when let email empty" time="1.122"/>
+  <testcase name="I fill in Email with &quot;&quot;" classname="Verify failed register when let email empty" time="0.345"/>
+  <testcase name="I fill in Password with &quot;Password26!&quot;" classname="Verify failed register when let email empty" time="1.001"/>
+  <testcase name="I tick TnC" classname="Verify failed register when let email empty" time="0.668"/>
+  <testcase name="I press Daftar" classname="Verify failed register when let email empty" time="0.381"/>
+  <testcase name="error message empty email will be shown" classname="Verify failed register when let email empty" time="0.033"/>
+  <testcase name="classMethod" classname="Verify failed register when let email empty" time="37.871"/>
+  <system-out><![CDATA[
+@negative
+Scenario: Verify failed register when let email empty ?[90m# src/test/resources/features/RegisterPage.feature:34?[0m
+]]></system-out>
+  <system-err><![CDATA[108854 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 109.0.5414.74 (resolved driver for Chrome 109)
+108858 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/davidanthonny/.cache/selenium/chromedriver/mac64/109.0.5414.74/chromedriver
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 46089
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 16, 2023 8:42:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Feb 16, 2023 8:43:16 AM org.openqa.selenium.interactions.Actions moveToElement
+INFO: When using the W3C Action commands, offsets are from the center of element
+]]></system-err>
+</testsuite>

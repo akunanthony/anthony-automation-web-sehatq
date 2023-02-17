@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify failed register when let full name empty" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-02-16T01:42:05" hostname="Anthonys-Laptop.local" time="34.437">
+  <properties/>
+  <testcase name="I am not currently logged in" classname="Verify failed register when let full name empty" time="21.595"/>
+  <testcase name="I am on the Login page" classname="Verify failed register when let full name empty" time="5.278"/>
+  <testcase name="I press &quot;Daftar&quot;" classname="Verify failed register when let full name empty" time="1.838"/>
+  <testcase name="Daftar Page will be shown" classname="Verify failed register when let full name empty" time="1.906"/>
+  <testcase name="I fill in Nama Lengkap with &quot;&quot;" classname="Verify failed register when let full name empty" time="0.532"/>
+  <testcase name="I fill in Email with &quot;anthony1234@yopmail.com&quot;" classname="Verify failed register when let full name empty" time="1.673"/>
+  <testcase name="I fill in Password with &quot;Password26!&quot;" classname="Verify failed register when let full name empty" time="0.423"/>
+  <testcase name="I tick TnC" classname="Verify failed register when let full name empty" time="0.603"/>
+  <testcase name="I press Daftar" classname="Verify failed register when let full name empty" time="0.403"/>
+  <testcase name="error message for empty full name will show" classname="Verify failed register when let full name empty" time="0.033"/>
+  <testcase name="classMethod" classname="Verify failed register when let full name empty" time="38.855"/>
+  <system-out><![CDATA[
+@negative
+Scenario: Verify failed register when let full name empty ?[90m# src/test/resources/features/RegisterPage.feature:21?[0m
+]]></system-out>
+  <system-err><![CDATA[70006 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 109.0.5414.74 (resolved driver for Chrome 109)
+70010 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/davidanthonny/.cache/selenium/chromedriver/mac64/109.0.5414.74/chromedriver
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 11796
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 16, 2023 8:42:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Feb 16, 2023 8:42:38 AM org.openqa.selenium.interactions.Actions moveToElement
+INFO: When using the W3C Action commands, offsets are from the center of element
+]]></system-err>
+</testsuite>

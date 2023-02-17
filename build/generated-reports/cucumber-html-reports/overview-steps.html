@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no null) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>root project 'Simple-Automation-Test'</td>
+        <td>null</td>
+      <td>16 Feb 2023, 08:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">hooks.WebdriverHook.initialize()</td>
+              <td>7</td>
+              <td class="duration" data-value="4672428571">4.672</td>
+              <td class="duration" data-value="4672428571">6.204</td>
+              <td class="duration" data-value="32707000000">32.707</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">hooks.WebdriverHook.quitBrowser(io.cucumber.java.Scenario)</td>
+              <td>7</td>
+              <td class="duration" data-value="105857142">0.105</td>
+              <td class="duration" data-value="105857142">0.130</td>
+              <td class="duration" data-value="741000000">0.741</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.errorMessageEmailWillBeShown()</td>
+              <td>1</td>
+              <td class="duration" data-value="80000000">0.080</td>
+              <td class="duration" data-value="80000000">0.080</td>
+              <td class="duration" data-value="80000000">0.080</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.errorMessageForEmptyEmailWillBeShown()</td>
+              <td>1</td>
+              <td class="duration" data-value="155000000">0.155</td>
+              <td class="duration" data-value="155000000">0.155</td>
+              <td class="duration" data-value="155000000">0.155</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.errorMessageForEmptyPasswordWillBeShown()</td>
+              <td>3</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="duration" data-value="79000000">0.178</td>
+              <td class="duration" data-value="237000000">0.237</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.iAmOnLoginPage()</td>
+              <td>3</td>
+              <td class="duration" data-value="13374666666">13.374</td>
+              <td class="duration" data-value="13374666666">14.681</td>
+              <td class="duration" data-value="40124000000">40.124</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.iInputMyCorrectEmailWith(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="3301666666">3.301</td>
+              <td class="duration" data-value="3301666666">4.244</td>
+              <td class="duration" data-value="9905000000">9.905</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.iInputMyCorrectPasswordWith(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="522333333">0.522</td>
+              <td class="duration" data-value="522333333">0.659</td>
+              <td class="duration" data-value="1567000000">1.567</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.LoginSehatQStepDef.iPressButtonLogin()</td>
+              <td>3</td>
+              <td class="duration" data-value="811666666">0.811</td>
+              <td class="duration" data-value="811666666">1.288</td>
+              <td class="duration" data-value="2435000000">2.435</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.daftarPageWillBeShown()</td>
+              <td>4</td>
+              <td class="duration" data-value="1826750000">1.826</td>
+              <td class="duration" data-value="1826750000">1.908</td>
+              <td class="duration" data-value="7307000000">7.307</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.errorMessageEmptyEmailWillBeShown()</td>
+              <td>1</td>
+              <td class="duration" data-value="33000000">0.033</td>
+              <td class="duration" data-value="33000000">0.033</td>
+              <td class="duration" data-value="33000000">0.033</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.errorMessageForEmptyFullNameWillShow()</td>
+              <td>1</td>
+              <td class="duration" data-value="33000000">0.033</td>
+              <td class="duration" data-value="33000000">0.033</td>
+              <td class="duration" data-value="33000000">0.033</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.errorMessageInvalidEmailWillBeShown()</td>
+              <td>1</td>
+              <td class="duration" data-value="32000000">0.032</td>
+              <td class="duration" data-value="32000000">0.032</td>
+              <td class="duration" data-value="32000000">0.032</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iAmNotCurrentlyLoggedIn()</td>
+              <td>4</td>
+              <td class="duration" data-value="20564750000">20.564</td>
+              <td class="duration" data-value="20564750000">21.596</td>
+              <td class="duration" data-value="82259000000">1:22.259</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iAmOnTheLoginPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="6130000000">6.130</td>
+              <td class="duration" data-value="6130000000">8.111</td>
+              <td class="duration" data-value="24520000000">24.520</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iFillInEmailWith(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1047500000">1.047</td>
+              <td class="duration" data-value="1047500000">1.673</td>
+              <td class="duration" data-value="4190000000">4.190</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iFillInNamaLengkapWith(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1021000000">1.021</td>
+              <td class="duration" data-value="1021000000">1.299</td>
+              <td class="duration" data-value="4084000000">4.084</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iFillInPasswordWith(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="513250000">0.513</td>
+              <td class="duration" data-value="513250000">1.001</td>
+              <td class="duration" data-value="2053000000">2.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iPress(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1651000000">1.651</td>
+              <td class="duration" data-value="1651000000">1.838</td>
+              <td class="duration" data-value="6604000000">6.604</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iPressDaftar()</td>
+              <td>4</td>
+              <td class="duration" data-value="453500000">0.453</td>
+              <td class="duration" data-value="453500000">0.529</td>
+              <td class="duration" data-value="1814000000">1.814</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">steps.SehatQMainStepDef.iTickTnC()</td>
+              <td>4</td>
+              <td class="duration" data-value="561750000">0.561</td>
+              <td class="duration" data-value="561750000">0.668</td>
+              <td class="duration" data-value="2247000000">2.247</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>21</td>
+            <td>70</td>
+            <td class="duration">3.187</td>
+            <td class="duration">1:22.259</td>
+            <td class="duration">3:43.127</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
